@@ -2,8 +2,8 @@ name: Deployment workflow with 1 job
 on: push
 jobs:
   deploy:
+    runs-on: windows-latest
     steps:
-      runs-on: windows-latest
       - name: Get the code
         uses: actions/checkout@v3
       - name: Install NodeJS
