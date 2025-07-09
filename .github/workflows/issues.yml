@@ -1,5 +1,7 @@
 name: Risen Issues
 on: [issues, workflow_dispatch]
+env:
+  GITHUB_CONTEXT: ${{ toJson(github) }}
 jobs:
   info:
     runs-on: windows-latest
